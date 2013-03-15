@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraphBody</class>
+ <widget class="QWidget" name="GraphBody">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>257</width>
+    <height>221</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <action name="actionAdd_relation">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/textedit/images/editpaste.png</normaloff>:/textedit/images/editpaste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add relation</string>
+   </property>
+   <property name="toolTip">
+    <string>Add relation</string>
+   </property>
+   <property name="shortcut">
+    <string>`</string>
+   </property>
+  </action>
+  <action name="actionLevel_down">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/icons/down</normaloff>:/icons/down</iconset>
+   </property>
+   <property name="text">
+    <string>Level down</string>
+   </property>
+   <property name="toolTip">
+    <string>Level down</string>
+   </property>
+   <property name="shortcut">
+    <string>PgDown</string>
+   </property>
+  </action>
+  <action name="actionState_machine">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/icons/fsm</normaloff>:/icons/fsm</iconset>
+   </property>
+   <property name="text">
+    <string>State machine</string>
+   </property>
+   <property name="toolTip">
+    <string>State machine</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/textedit/images/test.png</normaloff>:/textedit/images/test.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit help page</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionRemove_state">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/icons/images/new/gtk-no.png</normaloff>:/icons/images/new/gtk-no.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove state</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../share/mainResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

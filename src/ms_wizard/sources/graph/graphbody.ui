@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraphBody</class>
+ <widget class="QWidget" name="GraphBody">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>532</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <action name="actionAdd_relation">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/textedit/images/editcopy.png</normaloff>:/textedit/images/editcopy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add relation</string>
+   </property>
+   <property name="toolTip">
+    <string>Add relation</string>
+   </property>
+  </action>
+  <action name="actionDelete_state">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/textedit/images/xkill.png</normaloff>:/textedit/images/xkill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete state</string>
+   </property>
+  </action>
+  <action name="actionRemove_relation">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/textedit/images/xkill.png</normaloff>:/textedit/images/xkill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove relation</string>
+   </property>
+  </action>
+  <action name="actionEdit_edge">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/textedit/images/editpaste.png</normaloff>:/textedit/images/editpaste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit edge</string>
+   </property>
+  </action>
+  <action name="actionEdit_state">
+   <property name="icon">
+    <iconset resource="../../share/mainResources.qrc">
+     <normaloff>:/textedit/images/filenew.png</normaloff>:/textedit/images/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit state</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../share/mainResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

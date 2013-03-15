@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EnterInputs</class>
+ <widget class="QMainWindow" name="EnterInputs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Master</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="share/mainResources.qrc">
+    <normaloff>:/textedit/images/boot.png</normaloff>:/textedit/images/boot.png</iconset>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowNestedDocks|QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QSplitter" name="sSplitAll">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="widget_2" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QSplitter" name="sIOSplit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="opaqueResize">
+           <bool>false</bool>
+          </property>
+          <widget class="QGroupBox" name="gbInputs">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title">
+            <string>Inputs</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QTableView" name="tvInputs">
+              <property name="editTriggers">
+               <set>QAbstractItemView::AllEditTriggers</set>
+              </property>
+              <property name="showDropIndicator" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="textElideMode">
+               <enum>Qt::ElideNone</enum>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+              <property name="cornerButtonEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>150</number>
+              </attribute>
+              <attribute name="verticalHeaderDefaultSectionSize">
+               <number>18</number>
+              </attribute>
+              <attribute name="verticalHeaderMinimumSectionSize">
+               <number>18</number>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QGroupBox" name="gbOutputs">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title">
+            <string>Outputs</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QTableView" name="tvOutputs">
+              <property name="dragEnabled">
+               <bool>true</bool>
+              </property>
+              <property name="dragDropMode">
+               <enum>QAbstractItemView::DragOnly</enum>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="horizontalScrollMode">
+               <enum>QAbstractItemView::ScrollPerPixel</enum>
+              </property>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>150</number>
+              </attribute>
+              <attribute name="verticalHeaderDefaultSectionSize">
+               <number>18</number>
+              </attribute>
+              <attribute name="verticalHeaderMinimumSectionSize">
+               <number>18</number>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QSplitter" name="sStatesSplit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QGroupBox" name="gbStates">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title">
+            <string>States</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QTreeView" name="tvStates">
+              <property name="contextMenuPolicy">
+               <enum>Qt::CustomContextMenu</enum>
+              </property>
+              <property name="uniformRowHeights">
+               <bool>true</bool>
+              </property>
+              <property name="allColumnsShowFocus">
+               <bool>true</bool>
+              </property>
+              <attribute name="headerDefaultSectionSize">
+               <number>150</number>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QGroupBox" name="gbControlStates">
+           <property name="title">
+            <string>Control states</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QSplitter" name="splitter">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QTreeView" name="tvControls">
+               <property name="dragDropMode">
+                <enum>QAbstractItemView::DropOnly</enum>
+               </property>
+               <property name="rootIsDecorated">
+                <bool>true</bool>
+               </property>
+               <property name="uniformRowHeights">
+                <bool>true</bool>
+               </property>
+               <property name="allColumnsShowFocus">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="gbOther">
+      <property name="title">
+       <string>Other</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Module Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="IdentificatorEdit" name="leModule">
+         <property name="text">
+          <string>MyModule</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lDesc">
+         <property name="text">
+          <string>Module description</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="tbDescription">
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="documentTitle">
+          <string>Title</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="GraphBody" name="wGraph" native="true"/>
+    </item>
+    <item>
+     <widget class="QWidget" name="wButtons" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="hlButtons">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbCancel">
+           <property name="toolTip">
+            <string>Back</string>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+           <property name="icon">
+            <iconset resource="share/mainResources.qrc">
+             <normaloff>:/textedit/images/go-previous.png</normaloff>:/textedit/images/go-previous.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbFinish">
+           <property name="toolTip">
+            <string>Go to graph</string>
+           </property>
+           <property name="text">
+            <string>Finish</string>
+           </property>
+           <property name="icon">
+            <iconset resource="share/mainResources.qrc">
+             <normaloff>:/textedit/images/forward.png</normaloff>:/textedit/images/forward.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbNext">
+           <property name="toolTip">
+            <string>Go to next page</string>
+           </property>
+           <property name="text">
+            <string>Next</string>
+           </property>
+           <property name="icon">
+            <iconset resource="share/mainResources.qrc">
+             <normaloff>:/textedit/images/forward.png</normaloff>:/textedit/images/forward.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>620</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="maFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_project"/>
+    <addaction name="actionSave_project"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="maActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionAddState"/>
+    <addaction name="actionAddRelation"/>
+    <addaction name="actionDelete_state"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionAddInput"/>
+    <addaction name="actionAddOutput"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuGenerate">
+    <property name="title">
+     <string>Generate</string>
+    </property>
+    <addaction name="actionGeneration"/>
+   </widget>
+   <addaction name="maFile"/>
+   <addaction name="maActions"/>
+   <addaction name="menuGenerate"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_project"/>
+   <addaction name="actionSave_project"/>
+   <addaction name="separator"/>
+   <addaction name="actionGeneration"/>
+   <addaction name="separator"/>
+   <addaction name="actionAddInput"/>
+   <addaction name="actionAddOutput"/>
+   <addaction name="actionAddState"/>
+   <addaction name="actionAddRelation"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAddInput">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/system-installer.png</normaloff>:/textedit/images/system-installer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add input</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionAddOutput">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/file-roller.png</normaloff>:/textedit/images/file-roller.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAddState">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/filenew.png</normaloff>:/textedit/images/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add state</string>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/icons/images/exit.png</normaloff>:/icons/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionGeneration">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/finish.png</normaloff>:/textedit/images/finish.png</iconset>
+   </property>
+   <property name="text">
+    <string>Generation verilog code</string>
+   </property>
+  </action>
+  <action name="actionAddRelation">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/object-flip-horizontal.png</normaloff>:/textedit/images/object-flip-horizontal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add relation</string>
+   </property>
+  </action>
+  <action name="actionDelete_state">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/xkill.png</normaloff>:/textedit/images/xkill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete state</string>
+   </property>
+  </action>
+  <action name="actionSave_project">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/filesave.png</normaloff>:/textedit/images/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionOpen_project">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/icons/images/document-open.png</normaloff>:/icons/images/document-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open project</string>
+   </property>
+  </action>
+  <action name="actionRemove_input">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/xkill.png</normaloff>:/textedit/images/xkill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove input</string>
+   </property>
+  </action>
+  <action name="actionRemove_output">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/xkill.png</normaloff>:/textedit/images/xkill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove output</string>
+   </property>
+  </action>
+  <action name="actionRemove_control">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/xkill.png</normaloff>:/textedit/images/xkill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove control</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="share/mainResources.qrc">
+     <normaloff>:/textedit/images/filesave.png</normaloff>:/textedit/images/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GraphBody</class>
+   <extends>QWidget</extends>
+   <header>graphbody.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IdentificatorEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">identificatoredit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="share/mainResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
